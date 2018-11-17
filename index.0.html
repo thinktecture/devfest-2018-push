@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    async function showNotification() {
+        const result = await Notification.requestPermission();
+        if (result === 'granted') {
+            const noti = new Notification('Hello!', {
+                body: 'It’s me.',
+                icon: 'icon512.png'
+            });
+            noti.onclick = () => alert('clicked');
+        }
+    }
+    showNotification();
+</script>
+</body>
+</html>

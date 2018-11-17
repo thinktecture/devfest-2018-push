@@ -1,0 +1,26 @@
+{
+  "name": "devfest-2018-push",
+  "version": "1.0.0",
+  "description": "Google DevFest Karlsruhe, Duale Hochschule Baden-Württemberg.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinktecture/devfest-2018-push.git"
+  },
+  "author": "Christian Liebel",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/thinktecture/devfest-2018-push/issues"
+  },
+  "homepage": "https://github.com/thinktecture/devfest-2018-push#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "web-push": "^3.3.3"
+  }
+}
